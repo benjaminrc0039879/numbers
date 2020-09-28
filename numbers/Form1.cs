@@ -23,6 +23,31 @@ namespace numbers
             richTextBox1.AppendText(c.ToString("n0") + "\n");
             richTextBox1.AppendText(c.ToString("n16") + "\n");
             richTextBox1.AppendText(c.ToString("n3") + "\n");
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+            string s2 = "3.2";
+            try
+            {
+                int it = int.Parse(s2);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + " is not an integer");
+            }
+            string s3 = "pi";
+            try { double d2 = double.Parse(s3);
+            }
+            catch
+            {
+                double d2 = 0;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
